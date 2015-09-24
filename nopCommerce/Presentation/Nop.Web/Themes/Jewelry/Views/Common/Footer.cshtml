@@ -1,0 +1,122 @@
+﻿@model FooterModel
+@using Nop.Web.Models.Common;
+@using Nop.Core.Infrastructure;
+@using Nop.Core;
+@using Nop.Services.Configuration;
+@using Nop.Core.Domain.Tax;
+
+@{
+    var storeId = EngineContext.Current.Resolve<IStoreContext>().CurrentStore.Id;
+    var pinterestUrl = EngineContext.Current.Resolve<ISettingService>().GetSettingByKey("jewelrythemesettings.pinteresturl", String.Empty, storeId, true);
+    var removeCopyright = EngineContext.Current.Resolve<ISettingService>().GetSettingByKey("jewelrythemesettings.removecopyright", false, storeId, true);
+    var workingLanguageId = EngineContext.Current.Resolve<IWorkContext>().WorkingLanguage.Id;
+}
+<div class="footer">
+    <div class="center">
+        <div class="upper-area">
+            <div class="footlist footer-contacts">
+                <h3 class="title">
+                    @T("SevenSpikes.Themes.Jewelry.Common.ConnectWithUs")
+                </h3>
+                <ul>
+                    <li class="phone">
+                        @T("SevenSpikes.Themes.Jewelry.Common.ConnectWithUs.Phone")
+                    </li>
+                    <li class="mobile">
+                        @T("SevenSpikes.Themes.Jewelry.Common.ConnectWithUs.Mobile")
+                    </li>
+                    <li class="email">
+                        @T("SevenSpikes.Themes.Jewelry.Common.ConnectWithUs.Email")
+                    </li>
+                </ul>
+            </div>
+            <div class="footlist">
+                <h3 class="title">@T("SevenSpikes.Themes.Jewelry.Common.SomeInformation")</h3>
+                <ul>
+                    @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
+                    {
+                        <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+                    }
+                </ul>
+            </div>
+            <div class="footlist">
+                <h3 class="title">@T("SevenSpikes.Themes.Jewelry.Common.ShippingAndReturns")</h3>
+                <ul>
+                    @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn2).ToList())
+                    {
+                        <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+                    }
+                </ul>
+            </div>
+            <div class="footlist">
+                <h3 class="title">@T("SevenSpikes.Themes.Jewelry.Common.ServiceAndSupport")</h3>
+                <ul>
+                    @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn3).ToList())
+                    {
+                        <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+                    }
+                    <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower-area">
+
+            @Html.Action("NewsletterBox", "Newsletter")
+
+            <div class="footbox pay-options">
+                <h3 class="title">@T("SevenSpikes.Themes.Jewelry.Common.PaymentOptions")</h3>
+                <img src="@Url.Content("~/Themes/Jewelry/Content/img/pay_icon1.png")" alt="" />
+                <img src="@Url.Content("~/Themes/Jewelry/Content/img/pay_icon2.png")" alt="" />
+                <img src="@Url.Content("~/Themes/Jewelry/Content/img/pay_icon3.png")" alt="" />
+                <img src="@Url.Content("~/Themes/Jewelry/Content/img/pay_icon4.png")" alt="" />
+                <img src="@Url.Content("~/Themes/Jewelry/Content/img/pay_icon5.png")" alt="" />
+                <img src="@Url.Content("~/Themes/Jewelry/Content/img/pay_icon6.png")" alt="" />
+            </div>
+            <div class="footbox social">
+                <h3 class="title">@T("SevenSpikes.Themes.Jewelry.Common.FollowUs")</h3>
+                @if (!String.IsNullOrEmpty(Model.FacebookLink))
+                {
+                    <a href="@Model.FacebookLink" class="facebook" target="_blank"></a>
+                }
+                @if (!String.IsNullOrEmpty(Model.TwitterLink))
+                {
+                    <a href="@Model.TwitterLink" class="twitter" target="_blank"></a>
+                }
+                @if (!String.IsNullOrEmpty(Model.GooglePlusLink))
+                {
+                    <a href="@Model.GooglePlusLink" class="google-plus" target="_blank"></a>
+                }
+                @if (!String.IsNullOrEmpty(Model.YoutubeLink))
+                {
+                    <a href="@Model.YoutubeLink" class="youtube" target="_blank"></a>
+                }
+                @if (!String.IsNullOrEmpty(pinterestUrl))
+                {
+                    <a href="@pinterestUrl" class="pinterest" target="_blank"></a>
+                }
+                @if (Model.NewsEnabled)
+                {
+                    <a class="rss" target="_blank" href="@Url.RouteUrl("NewsRSS", new {languageId = Model.WorkingLanguageId})"></a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottomline">
+    <div class="center">
+        <span class="footer-disclaimer">@T("Content.CopyrightNotice", DateTime.Now.Year, Model.StoreName)</span>
+        @if (!removeCopyright)
+        {
+            <span class="footer-poweredby">Powered by <a href="http://www.nopcommerce.com/">Nop-Commerce</a></span>
+        }
+        <div class="footer-storetheme">@Html.Action("StoreThemeSelector", "Common")</div>
+    </div>
+</div>
+@if (Model.DisplayTaxShippingInfoFooter)
+{
+    var inclTax = EngineContext.Current.Resolve<IWorkContext>().TaxDisplayType == TaxDisplayType.IncludingTax;
+    <div class="footer-tax-shipping">
+        @T(inclTax ? "Footer.TaxShipping.InclTax" : "Footer.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = Html.GetTopicSeName("shippinginfo") }))
+    </div>
+}
+@Html.Widget("footer")

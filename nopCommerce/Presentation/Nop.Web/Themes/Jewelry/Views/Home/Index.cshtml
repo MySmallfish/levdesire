@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/Views/Shared/_ColumnsOneHome.cshtml";
+
+    MvcHtmlString homePageSliderHtml = MvcHtmlString.Empty;
+    homePageSliderHtml = Html.Widget("home_page_slider_top");
+}
+<div class="page home-page">
+    <div class="page-body">
+        @if (!MvcHtmlString.IsNullOrEmpty(homePageSliderHtml))
+        {
+            <div class="slider">
+                @homePageSliderHtml
+                <div class="shadow"> </div>
+            </div><!--slider-->
+        }
+
+        @Html.Widget("home_page_top")
+
+        @Html.Action("TopicBlock", "Topic", new { systemName = "HomePageText" })
+        @Html.Widget("home_page_before_categories")
+        @Html.Action("HomepageCategories", "Catalog")
+        @Html.Widget("home_page_before_products")
+        @Html.Action("HomepageProducts", "Product")
+
+        @Html.Widget("jcarousel_home_page_after_featured_products")
+        @Html.Widget("home_page_before_best_sellers")
+        @Html.Action("HomepageBestSellers", "Product")
+        @Html.Widget("home_page_before_news")
+        @Html.Action("HomePageNews", "News")
+        @Html.Widget("home_page_before_poll")
+        @Html.Action("HomePagePolls", "Poll")
+
+        @Html.Widget("home_page_bottom")
+    </div>
+</div>

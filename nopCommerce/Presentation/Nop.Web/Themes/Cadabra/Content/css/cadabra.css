@@ -1,0 +1,223 @@
+﻿.cadabra .spacer {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1px;
+}
+
+    .cadabra .spacer > div {
+        margin: 0;
+        padding: 0;
+        width: 14.26%;
+        width: 14.285%;
+        overflow: hidden;
+        height: 10px;
+        display: inline-block;
+       
+    }
+
+        .cadabra .spacer > div:nth-child(1),
+        .cadabra .spacer > div:nth-child(5) {
+            background-color: #B1100C;
+        }
+
+        .cadabra .spacer > div:nth-child(2),
+        .cadabra .spacer > div:nth-child(4),
+        .cadabra .spacer > div:nth-child(7) {
+            background-color: #143F88;
+        }
+
+        .cadabra .spacer > div:nth-child(3) {
+            background-color: #F5A210;
+        }
+
+        .cadabra .spacer > div:nth-child(6) {
+            background-color: #039857;
+        }
+
+.cadabra .header-links span,
+.cadabra .header-links a {
+    color: #333;
+    line-height: normal;
+}
+
+.cadabra .desktop-header-right {
+    margin-top: 48px;
+}
+.cadabra .header-logo {
+    margin-top: 20px;    
+    margin-bottom: 20px;    
+}
+.cadabra .search-box.store-search-box input.search-box-text {
+    border: solid 1px #444;
+
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+/*    min-width: 320px;*/
+}
+
+.cadabra .header-links li {
+    border: none;
+    margin: 12px;
+}
+
+    .cadabra .mega-menu > li > a, 
+    .cadabra .mega-menu > li > span 
+    .cadabra .top-menu > li > a, 
+    .cadabra .top-menu > li > span {
+        padding: 8px 26px;
+        
+    }
+.cadabra .mega-menu > li,
+.cadabra .top-menu > li {
+    border-right: solid 1px white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+    .cadabra .mega-menu > li:last-child ,
+    .cadabra .top-menu > li:last-child 
+    {
+        border: none;
+    }
+
+
+.cadabra .mega-menu,
+.cadabra .top-menu {
+    background-color: black!important;
+    color: white;
+    margin: 0;
+    border: none;
+}
+.cadabra .master-wrapper-content {
+    padding: 0;
+    margin-top: 0;
+    width: auto;
+}
+.cadabra .mega-menu li a:before,
+.cadabra .top-menu li a:before {
+    border: none;
+    background-color: transparent;
+}
+
+.cadabra .header-links-wrapper {
+    margin: 0;
+}
+
+
+
+.cadabra .selectors {
+    float: right;
+}
+
+.cadabra .selectors select {
+    border: none;
+}
+
+
+
+
+.cadabra .search-box .store-search-box,
+.cadabra .shopping-cart-link {
+    background: none!important;
+    
+}
+.cadabra .shopping-cart-link a {
+    width: 120px;
+    text-indent: 0;
+    background: none!important;
+    border-radius: 0;
+    color: #444;
+    padding: 12px;
+}
+
+
+
+.cadabra .store-search-box .search-box-button {
+    border-radius: 4px!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    
+}
+
+.cadabra input[type=text],
+.cadabra input[type=password] {
+    border: 1px solid #c9c9c9;
+}
+
+.cadabra.color-sky #goToTop,
+.cadabra .store-search-box .search-box-button {
+    background-color: #333!important;
+}
+
+.cadabra .login-page .page-title h1 {
+    border: none;
+}
+
+.cadabra .login-page .fieldset {
+    margin: 0;
+        padding: 10px 8px;
+}
+.cadabra .login-page .title, 
+.cadabra .login-page .topic-block-title {
+    border: none;
+    
+}
+    .cadabra .login-page .title > strong {
+        font-weight: normal;
+    }
+
+.cadabra .customer-blocks > div,
+.cadabra .topic-block
+ {
+    width: 20%;
+    margin: 10px;
+    float: left;
+}
+.cadabra .login-page .topic-block {
+    display: none;
+}
+.cadabra .customer-blocks > div.returning-wrapper {
+    width: 55%;
+}
+.cadabra .external-authentication {
+    display: none;
+}
+
+.product-pane {
+    width: 48.8%;
+    float: left;
+}
+
+.gallery {
+    border: none!important;
+    width: auto!important;
+    float: none!important;
+}
+
+.gallery > .picture {
+    border: none!important;
+}
+.product-name h1 {
+    font-size: 26pt;
+    font-weight: bold;
+    color: black;
+}
+@media all and (min-width: 240px) and (max-width: 640px) {
+    .product-pane {
+        width: 100%;
+        float: none;
+    }
+}
+@media all and (min-width: 240px) and (max-width: 1000px) {
+    .cadabra .customer-blocks > div {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+}
+
+
+

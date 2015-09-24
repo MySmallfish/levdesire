@@ -1,0 +1,165 @@
+﻿/*=====================================================
+    
+    TABLETS PORTRAIT & SMARTPHONES LANDSCAPE
+
+=====================================================*/
+
+@media all and (max-width: 768px) and (min-width: 481px) {
+
+/* HEADER MENU */
+
+    .menu-title span {
+	    background: url("../img/responsive-nav-icon.png") no-repeat 15px center;
+	    padding: 0 15px 0 0;
+    }
+
+    .header-menu * {
+        text-align: right !important;
+    }
+
+    .header-menu > ul .plus-button {
+        left: 0;
+        right: auto;
+        border-left: 0;
+        border-right: 1px solid #2f2f2f;
+    }
+
+    .header-menu .sublist-wrap .sublist-wrap {
+	    top: 0;
+	    right: 0;
+        left: auto;
+    }
+
+    .dropdown > ul > li > a, .inner-dropdown > ul > li > a {
+        padding: 13px 24px 12px 14px;
+    }
+
+/* ITEM GRID & CATEGORY PAGE */
+
+    .product-filters ul, .product-filters ul:nth-child(5n+1) {
+        margin: 0 2% 2% 0;
+    }
+    
+/* SITEMAP */
+
+    .sitemap-page .entity-body ul li a{
+        text-align: right;
+        padding-left: 0 !important;
+        padding-right: 10px;
+        background: url('../img/rtl-arrow2.png') right center no-repeat;
+    }
+    .sitemap-page .entity-body ul li a:hover{
+        background: url('../img/rtl-arrow3.png') right center no-repeat;
+    }
+
+/* BLOCKS */
+    
+    .block .title strong,
+    .block .title a.toggleControl {
+        background-position: 3% center !important;
+    }
+    .block .list li a {
+        padding: 12px 6.73400673400673% 12px 2.69360269360269% !important;
+        background: url('../img/rtl-arrow3.png') 97% center no-repeat !important;
+    }
+    .block .list li a:hover,
+    .block .list li a.active,
+    .block .list li:hover > a, 
+    .block .list li.active > a, 
+    .block .list li > a.active {
+        background: #eee url('../img/rtl-arrow2.png') 97% center no-repeat !important;
+    }
+    .block .list li .sublist a:hover,
+    .block .list li.active > .sublist li.active a {
+        background: url('../img/rtl-arrow2.png') 97% center no-repeat !important;
+    }
+
+/* LOGIN PAGE */
+
+    .register-button, .login-button {
+        float: right !important;
+    }
+    .login-page #RememberMe {
+        margin: 0;
+    }
+    .external-authentication fieldset.facebook-login-block {
+        float: right !important;
+    }
+
+
+
+    .compare-products-page table.compare-products-table-mobile {
+        display: block !important;
+    }
+    .home-page-category-grid .title {
+        padding: 0 !important;
+        text-align: center !important;
+    }
+    .new_select,
+    .footer input.newsletter-subscribe-text {
+        background-position: right top !important;
+    }
+    .new_select .passiveSelect, .new_select .activeSelect {
+        background: url("../img/rtl-responsive-select_btn1.png") left top no-repeat !important;
+        padding: 0 5px 0 30px !important;
+    }
+    .new_select .passiveSelect, .new_select .activeSelect:hover {
+        background-position: left bottom !important;
+    }
+    .advanced-search .price-range {
+        display: block;
+        width: 100%;
+    }
+    .password-recovery-page label {
+        text-align: right !important;
+    }
+    .product-details-page .gallery {
+        float: none;
+    }
+
+	.order-summary-content .totals {
+		float: left;
+	}
+
+    .order-progress ul {
+        width: auto;
+    }
+    .checkout-page .common-buttons,
+    .checkout-data .buttons,
+    .order-details-page .actions,
+    .account-page .add-button,
+    .account-page .buttons,
+    .block .view-all,
+    .login-page .buttons {
+        text-align: center;
+    }
+
+/* TABLES */
+
+    .account-page .data-table td:before,
+    .return-request-page .data-table td:before,
+    .checkout-page .cart td:before,
+    .wishlist-page .cart td:before,
+    .compare-products-table-mobile td:before {
+        left: inherit;
+        right: 10px;
+    }
+    .checkout-page .cart td,
+    .wishlist-page .cart td, 
+    .account-page .data-table td,
+    .return-request-page .data-table td,
+    .compare-products-table-mobile td {
+        /*padding: 10px 140px 10px 20px;*/
+        text-align: right;
+    }
+    .compare-products-page tr:first-child td {
+        padding: 10px 140px 10px 20px;
+    }
+
+/* FOOTER */
+
+    .footer .footlist a {
+        padding: 7px 10px 7px 0;
+    }
+
+}

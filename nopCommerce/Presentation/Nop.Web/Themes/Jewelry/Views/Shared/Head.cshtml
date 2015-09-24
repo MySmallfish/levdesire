@@ -1,0 +1,42 @@
+﻿@using Nop.Web.Framework;
+@using Nop.Core.Infrastructure;
+@using Nop.Web.Framework.UI;
+@using Nop.Core;
+@{
+    var supportRtl = EngineContext.Current.Resolve<IWorkContext>().WorkingLanguage.Rtl;
+
+    var browser = Request.Browser;
+    var isIeEightOrLess = false;
+    if (browser.Browser == "IE" && browser.MajorVersion <= 8)
+    {
+        isIeEightOrLess = true;
+    }
+
+    if (supportRtl)
+    {
+        Html.AddCssFileParts("~/Themes/Jewelry/Content/CSS/980.rtl.css");
+        Html.AddCssFileParts("~/Themes/Jewelry/Content/CSS/768.rtl.css");
+        Html.AddCssFileParts("~/Themes/Jewelry/Content/CSS/480.rtl.css");
+    }
+
+    Html.AppendCssFileParts("~/Themes/Jewelry/Content/CSS/980.css");
+    Html.AppendCssFileParts("~/Themes/Jewelry/Content/CSS/768.css");
+    Html.AppendCssFileParts("~/Themes/Jewelry/Content/CSS/480.css");
+    Html.AppendCssFileParts("~/Themes/Jewelry/Content/CSS/tables.css");
+
+    if (supportRtl)
+    {
+        Html.AppendCssFileParts("~/Themes/Jewelry/Content/CSS/styles.rtl.css");
+    }
+
+    Html.AppendCssFileParts("~/Themes/Jewelry/Content/CSS/styles.css");
+
+    Html.AddScriptParts("~/Plugins/SevenSpikes.Core/Scripts/SevenSpikesExtensions.js");
+    if (isIeEightOrLess)
+    {
+        Html.AddScriptParts("~/Plugins/SevenSpikes.Core/Scripts/selectivizr.min.js");
+        Html.AddScriptParts("~/Plugins/SevenSpikes.Core/Scripts/respond.min.js");
+    }
+    Html.AddScriptParts("~/Plugins/SevenSpikes.Core/Scripts/footable.js");
+    Html.AddScriptParts("~/Themes/Jewelry/Content/Scripts/Jewelry.js");
+}

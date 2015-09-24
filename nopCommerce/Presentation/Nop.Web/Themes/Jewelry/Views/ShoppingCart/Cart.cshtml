@@ -1,0 +1,23 @@
+﻿@model ShoppingCartModel
+@using Nop.Web.Models.Checkout
+@using Nop.Web.Models.ShoppingCart;
+@{
+    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.ShoppingCart").Text);
+}
+@if (!Model.OnePageCheckoutEnabled)
+{
+    @Html.Action("CheckoutProgress", "Checkout", new { step = CheckoutProgressStep.Cart })
+}
+    @*  add the checkout-page class so that all the elements and the page has the same styles as the checkout pages,
+        instead of repeating most of the css definitions for checkout-page and shopping-cart-page main classes *@
+    <div class="page checkout-page shopping-cart-page">
+        <div class="page-title">
+            <h1>@T("ShoppingCart")</h1>
+        </div>
+        <div class="page-body">
+            @Html.Partial("OrderSummary", Model)
+        </div>
+    </div>

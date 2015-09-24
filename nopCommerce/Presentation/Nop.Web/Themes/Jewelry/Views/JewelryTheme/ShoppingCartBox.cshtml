@@ -1,0 +1,20 @@
+﻿<div class="header-basket">
+    @T("SevenSpikes.Themes.Jewelry.HeaderShoppingCartBox")
+    @if (Model.ItemsCount == 0)
+    {
+        <label>@T("SevenSpikes.Themes.Jewelry.HeaderShoppingCartBox.NoItems")</label>
+    }
+    else
+    {
+        if (Model.ItemsCount == 1)
+        {
+            <a href="@Url.RouteUrl("ShoppingCart")">@T("SevenSpikes.Themes.Jewelry.HeaderShoppingCartBox.OneItemText")</a>
+        }
+        else
+        {
+            <a href="@Url.RouteUrl("ShoppingCart")">@T("SevenSpikes.Themes.Jewelry.HeaderShoppingCartBox.SeveralItemsText", @Model.ItemsCount)</a>
+        }
+    }
+    <br />
+    @T("SevenSpikes.Themes.Jewelry.HeaderShoppingCartBox.End")
+</div>

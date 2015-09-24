@@ -1,0 +1,366 @@
+﻿       .color-sky #goToTop,
+		.color-sky .eu-cookie-bar-notification button,
+        .color-sky .header-links-wrapper,
+        .color-sky .shopping-cart-link > a,
+        .color-sky .side-2 .block .title,
+        .color-sky .side-2 .block .list a:after,
+        .color-sky .side-2 .block .list strong:after,
+        .color-sky .side-2 .block .view-all a:hover,
+        .color-sky .listbox .poll .buttons input:hover,
+        .color-sky .product-grid .item-box .visible-details:before,
+        .color-sky .item-box input[type="button"]:hover,
+        .color-sky .item-box .add-info input[type="button"].add-to-compare-list-button,
+        .color-sky .item-box .add-info input[type="button"].add-to-wishlist-button,
+        .color-sky .product-list .item-box:after,
+        .color-sky .manufacturer-item .title:before,
+        .color-sky .free-shipping,
+        .color-sky .overview .add-to-cart-button:hover,
+        .color-sky .variant-overview .add-to-cart-button:hover,
+        .color-sky .write-review .button-1,
+        .color-sky .wishlist-content .button-2:hover,
+        .color-sky .contact-page .button-1,
+        .color-sky .email-a-friend-page .button-1,
+        .color-sky .account-page .page-title h1:after,
+        .color-sky .registration-page .button-1,
+        .color-sky .registration-result-page .button-1,
+        .color-sky .login-page .button-1,
+        .color-sky .password-recovery-page .button-1,
+        .color-sky .account-page .button-1,
+        .color-sky .return-request-page .button-1,
+        .color-sky .account-page .button-2:hover,
+        .color-sky #check-availability-button,
+        .color-sky .address-item .buttons:before,
+        .color-sky .order-item .buttons:before,
+        .color-sky .shopping-cart-page .button-1,
+        .color-sky .checkout-page .button-1,
+        .color-sky .checkout-page .button-2.order-completed-continue-button,
+        .color-sky .order-details-page .actions input,
+        .color-sky .search-input .button-1,
+        .color-sky .news-items .news-item:after,
+        .color-sky .new-comment .button-1,
+        .color-sky .contact-vendor input[type='button'],
+        .color-sky .shopping-cart-page .cart-footer .button-2:hover,
+        .color-sky .update-cart-button:hover,
+        .color-sky .checkout-page .button-2:hover,
+        .color-sky .order-details-page .page-title a:hover,
+        .color-sky .shopping-cart-page .common-buttons .continue-shopping-button,
+        .color-sky .product-variant-line:before,
+        .color-sky .flyout-cart:before,
+        .color-sky .mini-shopping-cart input[type="button"],
+        .color-sky .search-box-button,
+        .color-sky .header-menu > ul > li > a:after,
+        .color-sky .header-menu > ul > li > span:after,
+        .color-sky .header-menu .sublist:before,
+        .color-sky .cart th, 
+        .color-sky .data-table th, 
+        .color-sky .forums-table-section th,
+        .color-sky .ajaxCart .productAddedToCartWindowCheckout,
+        .color-sky .ui-slider-range,
+        .color-sky .nopAjaxFilters7Spikes .close-filters,
+        .color-sky .products-carousel .item-info:before,
+        .color-sky .products-carousel .item-info .button:hover,
+        .color-sky .mega-menu .dropdown:before,
+        .color-sky .previous-product,
+        .color-sky .next-product,
+        .color-sky .product-grid .quick-view-button a,
+        .color-sky .product-list .quick-view-button a:hover,
+        .color-sky .home-page-polls,
+        .color-sky .footer-upper,
+        .color-sky .nop-jcarousel .carousel-title.vertical span,
+        .color-sky .forum-edit-page .buttons input,
+        .color-sky .private-message-send-page .options input,
+        .color-sky .private-messages-page .buttons input,
+        .color-sky .private-message-view-page .options input,
+        .color-sky .forum-edit-page .buttons input[type="submit"],
+        .color-sky .private-messages-page .buttons input[type="submit"],
+        .color-sky .private-message-send-page .options input[type="submit"],
+        .color-sky .private-message-view-page .options input.button-1,
+        .color-sky .forum-post .pm-link-button:hover,
+        .color-sky .profile-info-box .pm-link-button:hover,
+        .color-sky .move-topic-page .buttons input,
+        .color-sky .ui-datepicker-calendar td:hover a,
+        .color-sky .checkout-page h1:after,
+        .color-sky .ropc button,
+        .color-sky .ropc button[disabled]:hover,
+        .color-sky .ropc .coupon-code button:hover {
+            background-color: white;
+           color: #333;
+        }
+
+    /* text color */
+		.color-sky .eu-cookie-bar-notification a,
+        .color-sky .fieldset .title,
+        .color-sky .required,
+        .color-sky .message-error,
+        .color-sky .field-validation-error,
+        .color-sky .username-not-available-status,
+        .color-sky .poll-vote-error,
+        .color-sky .password-error,
+        .color-sky .footer-middle .footer-block a:hover,
+        .color-sky .side-2 .block .view-all a,
+        .color-sky .block .tags li a:hover,
+        .color-sky .listbox .poll .buttons input,
+        .color-sky .item-box .actual-price,
+        .color-sky .item-box input[type="button"],
+        .color-sky .pager li span,
+        .color-sky .pager li a:hover,
+        .color-sky .overview .product-price span,
+        .color-sky .variant-overview .product-price span,
+        .color-sky .overview .add-to-cart-button,
+        .color-sky .variant-overview .add-to-cart-button,
+        .color-sky .variant-overview .add-to-wishlist-button,
+        .color-sky .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+        .color-sky .ui-tabs .ui-state-active.ui-tabs-active a,
+        .color-sky .product-tags-list li:hover > *,
+        .color-sky .product-reviews-page .title,
+        .color-sky .write-review .button-1:hover,
+        .color-sky .wishlist-content .button-2,
+        .color-sky .compare-products-page .button-2,
+        .color-sky .compare-products-page .clear-list:hover,
+        .color-sky .compare-products-page .button-2:hover,
+        .color-sky .contact-page .button-1:hover,
+        .color-sky .email-a-friend-page .button-1:hover,
+        .color-sky .email-a-friend-page .title a:hover,
+        .color-sky #username-availabilty,
+        .color-sky .registration-page .button-1:hover,
+        .color-sky .registration-result-page .button-1:hover,
+        .color-sky .login-page .button-1:hover,
+        .color-sky .password-recovery-page .button-1:hover,
+        .color-sky .account-page .button-1:hover,
+        .color-sky .return-request-page .button-1:hover,
+        .color-sky .login-page .title,
+        .color-sky .login-page .topic-block-title,
+        .color-sky .forgot-password:hover,
+        .color-sky .account-page .button-2,
+        .color-sky #check-availability-button:hover,
+        .color-sky .shopping-cart-page .button-1:hover,
+        .color-sky .checkout-page .button-1:hover,
+        .color-sky .shopping-cart-page .cart-footer .button-2,
+        .color-sky .update-cart-button,
+        .color-sky .order-details-page .page-title a,
+        .color-sky .shopping-cart-page .common-buttons .continue-shopping-button:hover,
+        .color-sky .cart-total tr:last-child td:last-child,
+        .color-sky .order-completed .details a:hover,
+        .color-sky .checkout-page .button-2.order-completed-continue-button:hover,
+        .color-sky .opc .back-link a:hover,
+        .color-sky .order-details-page .actions input:hover,
+        .color-sky .search-input .button-1:hover,
+        .color-sky .sitemap-page .entity-title,
+        .color-sky .sitemap-page a:hover,
+        .color-sky .news-title:hover,
+        .color-sky .post-head .post-title,
+        .color-sky .blog-page .tags a:hover,
+        .color-sky .blogpost-page .tags a:hover,
+        .color-sky .new-comment .button-1:hover,
+        .color-sky .vendor-list a:hover,
+        .color-sky .contact-vendor input[type='button']:hover,
+        .color-sky .product-tags-all-page .product-tags-list a:hover,
+        .color-sky .mini-shopping-cart .count a,
+        .color-sky .mini-shopping-cart .price span,
+        .color-sky .mini-shopping-cart input[type="button"]:hover,
+        .color-sky .cart a:hover,
+        .color-sky .data-table a:hover,
+        .color-sky .forums-table-section a:hover,
+        .color-sky .compare-products-table a:hover,
+        .color-sky .compare-products-table .product-price td,
+        .color-sky .productAddedToCartWindowDescription strong,
+        .color-sky .ajaxCart .productAddedToCartWindowCheckout:hover,
+        .color-sky .filter-block a.clearFilterOptions, 
+        .color-sky .filter-block a.clearPriceRangeFilter,
+        .color-sky .priceRangeCurrentPricesPanel span,
+        .color-sky .instant-search-item .detail .price,
+        .color-sky .products-carousel .item-info .actual-price,
+        .color-sky .products-carousel .item-info .button,
+        .color-sky .mega-menu .box li a:hover,
+        .color-sky .product-grid .quick-view-button a:hover,
+        .color-sky .product-list .quick-view-button a,
+        .color-sky .poll .buttons input:hover,
+        .color-sky .forum-edit-page .buttons input:hover,
+        .color-sky .private-message-send-page .options input:hover,
+        .color-sky .private-messages-page .buttons input:hover,
+        .color-sky .private-message-view-page .options input:hover,
+        .color-sky .forum-edit-page .buttons input[type="submit"]:hover,
+        .color-sky .private-messages-page .buttons input[type="submit"]:hover,
+        .color-sky .private-message-send-page .options input[type="submit"]:hover,
+        .color-sky .private-message-view-page .options input.button-1:hover,
+        .color-sky .forum-post .pm-link-button,
+        .color-sky .profile-info-box .pm-link-button,
+        .color-sky .move-topic-page .buttons input:hover,
+        .color-sky .ropc .section-title,
+        .color-sky .ropc button:hover,
+        .color-sky .ropc .coupon-code button {
+            color: #333;
+        }
+
+    /* border color */
+		.color-sky .eu-cookie-bar-notification,
+        .color-sky .side-2 .block .list li.active > a,
+        .color-sky .side-2 .block .list li.active > strong,
+        .color-sky .side-2 .block .view-all a,
+        .color-sky .listbox .poll .buttons input,
+        .color-sky .item-box input[type="button"],
+        .color-sky .overview .qty-input,
+        .color-sky .variant-overview .qty-input,
+        .color-sky .overview .add-to-cart-button,
+        .color-sky .variant-overview .add-to-cart-button,
+        .color-sky .variant-overview .add-to-wishlist-button,
+        .color-sky .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+        .color-sky .ui-tabs .ui-state-active.ui-tabs-active a,
+        .color-sky .write-review .button-1:hover,
+        .color-sky .wishlist-content .button-2,
+        .color-sky .compare-products-page .page-title h1,
+        .color-sky .contact-page .page-title h1,
+        .color-sky .email-a-friend-page .page-title h1,
+        .color-sky .contact-page .button-1:hover,
+        .color-sky .email-a-friend-page .button-1:hover,
+        .color-sky .registration-page .button-1:hover,
+        .color-sky .registration-result-page .button-1:hover,
+        .color-sky .login-page .button-1:hover,
+        .color-sky .password-recovery-page .button-1:hover,
+        .color-sky .account-page .button-1:hover,
+        .color-sky .return-request-page .button-1:hover,
+        .color-sky .login-page .page-title h1,
+        .color-sky .account-page .button-2,
+        .color-sky #check-availability-button:hover,
+        .color-sky .order-progress ul,
+        .color-sky .shopping-cart-page .button-1:hover,
+        .color-sky .checkout-page .button-1:hover,
+        .color-sky .shopping-cart-page .cart-footer .button-2,
+        .color-sky .update-cart-button,
+        .color-sky .order-details-page .page-title a,
+        .color-sky .shopping-cart-page .common-buttons .continue-shopping-button:hover,
+        .color-sky .order-review-data ul,
+        .color-sky .checkout-page .button-2.order-completed-continue-button:hover,
+        .color-sky .opc .step,
+        .color-sky .order-details-area ul,
+        .color-sky .order-details-page .actions input:hover,
+        .color-sky .shipment-details-page .shipment-overview > ul,
+        .color-sky .search-input .button-1:hover,
+        .color-sky .sitemap-page .page-title h1,
+        .color-sky .new-comment .button-1:hover,
+        .color-sky .blog-comment,
+        .color-sky .news-comment,
+        .color-sky .news-list-page .page-title h1,
+        .color-sky .blog-page .page-title h1,
+        .color-sky .product-tags-all-page .page-title h1,
+        .color-sky .vendor-list-page .page-title h1,
+        .color-sky .contact-vendor input[type='button']:hover,
+        .color-sky .topic-page .page-title h1,
+        .color-sky .mini-shopping-cart input[type="button"]:hover,
+        .color-sky .cart th, 
+        .color-sky .data-table th, 
+        .color-sky .forums-table-section th,
+        .color-sky .ajax-cart-button-wrapper input[type="text"],
+        .color-sky .ajaxCart .k-window-titlebar.k-header,
+        .color-sky .ajaxCart .productAddedToCartWindowCheckout:hover,
+        .color-sky .filter-block a.clearFilterOptions, 
+        .color-sky .filter-block a.clearPriceRangeFilter,
+        .color-sky .products-carousel .item-info .button,
+        .color-sky .product-list .quick-view-button a,
+        .color-sky .quickViewWindow .popup-header,
+        .color-sky .forum-edit-page .buttons input:hover,
+        .color-sky .private-message-send-page .options input:hover,
+        .color-sky .private-messages-page .buttons input:hover,
+        .color-sky .private-message-view-page .options input:hover,
+        .color-sky .forum-edit-page .buttons input[type="submit"]:hover,
+        .color-sky .private-messages-page .buttons input[type="submit"]:hover,
+        .color-sky .private-message-send-page .options input[type="submit"]:hover,
+        .color-sky .private-message-view-page .options input.button-1:hover,
+        .color-sky .forum-post .pm-link-button,
+        .color-sky .profile-info-box .pm-link-button,
+        .color-sky .move-topic-page .buttons input:hover,
+        .color-sky .ropc button:hover,
+        .color-sky .ropc .coupon-code button {
+            border-color: #444;
+        }
+
+    /* icons */
+    
+    .color-sky .item-box .add-info input[type="button"].add-to-compare-list-button,
+    .color-sky .item-box .add-info input[type="button"].add-to-wishlist-button {
+        background-image: url(../img/icons-add-info-sky.png);
+    }
+    .color-sky .shopping-cart-page .common-buttons .update-cart-button {
+        background-image: url(../img/icon-update-cart-sky.png); 
+    }
+    .color-sky .shopping-cart-page .common-buttons .continue-shopping-button {
+        background-image: url(../img/icon-continue-shop-sky.png);
+    }  
+
+
+    @media all and (min-width: 240px) and (max-width: 1000px) {
+
+        /* background */
+            .color-sky .search-box,
+            .color-sky .responsive-nav-wrapper .search-wrap span,
+            .color-sky .responsive-nav-wrapper .filters-button span,
+            .color-sky .header-menu .close-menu,
+            .color-sky .header-menu ul li.back-button {
+                background-color: white;
+            }
+
+    }
+
+    .side-2 .block .title {
+        color: #333;
+    }
+
+
+
+.shopping-cart-page .common-buttons .button-2.continue-shopping-button,
+.shopping-cart-page .common-buttons .button-2.continue-shopping-button:hover,
+.shopping-cart-page .common-buttons .button-2.update-cart-button,
+.shopping-cart-page .common-buttons .button-2.update-cart-button:hover {
+    background-color: navy;
+    color: white;
+    border-color: navy;
+    font-weight: bold;
+    background-position: left 4px;
+} 
+
+.shopping-cart-page .common-buttons .button-2.update-cart-button,
+.shopping-cart-page .common-buttons .button-2.update-cart-button:hover {
+    background-position: left -24px;
+}
+
+.shopping-cart-page .page-title h1 {
+    border-bottom: none;
+    text-transform: uppercase;
+}
+.shopping-cart-page .page-title {
+    border: none;
+}
+
+.shopping-cart-page .page-title h1:after {
+    background: none;
+}
+
+.cart-header-row {
+    border-bottom: solid 2px #333;
+}
+
+.cart td {
+    border: none;
+}
+
+.cart tr:nth-child(even) td {
+    background-color: #EEE;
+}
+
+input[type=submit].apply-discount-coupon-code-button,
+input[type=submit].apply-discount-coupon-code-button:hover,
+input[type=submit].apply-gift-card-coupon-code-button,
+input[type=submit].apply-gift-card-coupon-code-button:hover
+ {
+    background-color: dimgray!important;
+    color: white!important;
+    border-color: dimgray!important;
+}
+
+.deals .title, .estimate-shipping .title {
+    border: none;
+    color: navy;
+}
+.deals .title:after, .estimate-shipping .title:after {
+    background: none;
+}

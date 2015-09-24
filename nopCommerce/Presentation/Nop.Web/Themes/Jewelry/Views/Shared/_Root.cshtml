@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_Root.Head.cshtml";
+}
+@Html.Widget("body_start_html_tag_after")
+@Html.Partial("_Notifications")
+@Html.Action("AdminHeaderLinks", "Common")
+<div class="header-line">
+    <div class="center">
+        <div class="header-contacts">
+            <span class="phone">@T("SevenSpikes.Themes.Jewelry.Common.HeaderContacts.Phone")</span>
+            <span class="mail"><a href="javascript:AntiSpam('@T("SevenSpikes.Themes.Jewelry.Common.HeaderContacts.EmailName")', '@T("SevenSpikes.Themes.Jewelry.Common.HeaderContacts.EmailDomain")')">@T("SevenSpikes.Themes.Jewelry.Common.HeaderContacts.EmailName") [at] @T("SevenSpikes.Themes.Jewelry.Common.HeaderContacts.EmailDomain")</a></span>
+        </div><!--header-contacts-->
+        <div class="header-links-wrapper">
+            @Html.Action("HeaderLinks", "Common")
+            @Html.Action("FlyoutShoppingCart", "ShoppingCart")
+        </div><!--header-links-wrapper-->
+        <div class="header-selectors-wrapper">
+
+            @Html.Action("TaxTypeSelector", "Common")
+
+            @Html.Action("CurrencySelector", "Common")
+
+            @Html.Action("LanguageSelector", "Common")
+
+            @Html.Widget("header_selectors")
+        </div>
+    </div>
+</div>
+
+<div class="master-wrapper-page">
+    @Html.Action("JavaScriptDisabledWarning", "Common")
+    @Html.Partial("OldInternetExplorerWarning")
+    <div class="master-wrapper-content">
+        <script type="text/javascript">
+            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        </script>
+        @Html.Partial("Header")
+        @{
+            var menu = @Html.Widget("theme_header_menu");
+        }
+        <div class="header-menu">
+            @if (MvcHtmlString.IsNullOrEmpty(menu))
+            {
+
+                @Html.Action("TopMenu", "Catalog")
+            }
+            else
+            { @menu }
+        </div>
+        @Html.Widget("content_before")
+        @*ajax loading window*@
+        <div class="ajax-loading-block-window" style="display: none">
+            <div class="loading-image">
+            </div>
+        </div>
+        <div class="master-column-wrapper">
+            @RenderBody()
+        </div>
+        @Html.Widget("content_after")
+    </div>
+</div>
+@Html.Action("Footer", "Common")
+@Html.Action("EuCookieLaw", "Common")
+@Html.Widget("body_end_html_tag_before")

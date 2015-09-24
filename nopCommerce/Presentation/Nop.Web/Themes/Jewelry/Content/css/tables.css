@@ -1,0 +1,296 @@
+.footable td label{
+    display:none;
+}
+.cart, .data-table {
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.cart th, .data-table th {
+	border-top: 1px solid #ddd;
+	background: #f0f0f0 url('../img/boxpad3.png') top repeat-x;
+	box-shadow: inset 0 1px 0 #fff;
+	padding: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333;
+	text-shadow: 1px 1px 0 #fff;
+	white-space: nowrap;
+}
+.data-table th {
+	padding: 5px 10px;
+}
+.cart td, .data-table td {
+	border: 1px dotted #ccc;
+	border-right: none;
+	padding: 5px 10px;
+}
+.cart .cart-item-row {
+    text-align: center;
+}
+.cart .cart-item-row .product{
+    text-align: initial;
+}
+.cart td:first-child,
+.data-table td:first-child {
+	border-left: none;
+	text-align: center;
+}
+.cart .attributes,
+.data-table .attributes {
+	margin: 0;
+	border: none;
+    word-break: break-all;
+}
+.data-table .price,
+.data-table .total {
+    white-space: nowrap;
+}
+.data-table a:hover {
+	text-decoration: underline;
+}
+
+.cart td.add-to-cart {
+	text-align: center;
+}
+.cart td img {
+	width: 80px;
+    max-width: none;
+}
+.cart td.product a {
+	font: italic bold 15px "Times New Roman", Times, serif;
+	color: #333;
+}
+.cart td.product a:hover {
+	color: #b68c65;
+}
+.cart input[type="text"] {
+	width: 30px;
+	padding: 5px;
+    text-align: center;
+}
+.cart .product-unit-price {
+	font-weight: bold;
+	color: #b68c65;
+    white-space: nowrap;
+}
+.cart .product-subtotal {
+	font-weight: bold;
+	color: #c30;
+    white-space: nowrap;
+}
+    .cart .sku {
+        word-break: break-all;
+    }
+.order-notes .data-table th, 
+.order-notes .data-table td {
+    text-align: left !important;
+}
+
+.forum-subscriptions-page .data-table,
+.subscription-list .data-table {
+	margin: 10px 0;
+}
+.selected-shipping-method {
+    display: block;
+}
+.order-details span{
+    display: block;
+}
+.order-details-page .quantity,
+.order-details-page .total,
+.order-details-page .price {
+    text-align: center;
+}
+.compare-products-table-mobile{
+    text-align: center;
+}
+.go-to-page {
+    display: inline-block !important;
+    padding: 6px 0;
+    font-size: 13px !important;
+    min-width: 92px;
+}
+/* styles for mobile forum tables */
+.forums-table-section .latest-post{
+    min-width:150px;
+}
+.forums-table-section .forum-details,
+.forums-table-section .topic-details{
+    min-width:300px;
+}
+.forums-table-section .table-wrapper{
+    overflow-x:auto;
+}
+/* COMPARE PRODUCTS DESKTOP VERSION */
+
+    .compare-products-page table input[type="button"] {
+	    display: block;
+	    margin-bottom: 10px;
+	    border: 1px solid #ccc;
+	    border-radius: 3px;
+	    background: url('../img/button5.png') top repeat-x;
+	    box-shadow: inset 0 1px 0 #f6f6f6;
+	    padding: 5px 10px;
+	    font: normal 11px Tahoma, Geneva, sans-serif;
+	    color: #333;
+	    text-shadow: 1px 1px 0 #fff;
+    }
+
+@media all and (max-width: 980px) {
+
+    .compare-products-table {
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 981px) {
+
+    .compare-products-table-mobile {
+        display: none;
+    }
+
+    .compare-products-table {
+	    border: 1px solid #ddd;
+	    background: #fff;
+	    box-shadow: inset 0 0 10px #ddd;
+        display: table;
+    }
+    .compare-products-table td {
+	    padding: 5px 10px;
+	    vertical-align: top;
+	    border-left: 1px dotted #ccc;
+    }
+    .compare-products-table td:first-child {
+	    border-left: none;
+	    font-size: 11px;
+	    font-weight: bold;
+	    color: #333 !important;
+    }
+    .compare-products-table tr:first-child td {
+	    background: #f3f3f3;
+	    padding: 10px;
+	    border-bottom: 1px dotted #ddd;
+    }
+    .compare-products-table td img {
+	    width: 150px;
+	    border: 1px solid #ddd;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .compare-products-table .product-name td {
+	    border-bottom: 1px dotted #ddd;
+	    padding: 10px;
+    }
+    .compare-products-table .product-name a {
+	    font: italic bold 15px "Times New Roman", Times, serif;
+	    color: #333;
+    }
+    .compare-products-table .product-name a:hover,
+    .compare-products-table .product-price td {
+	    color: #b68c65;
+    }
+
+}
+
+
+
+/*==== RESPONSIVE ====*/
+
+@media all and (max-width: 360px) {
+
+    .section.shipments .data-table th {
+        font-size: 11px;
+    }
+
+}
+
+    /* footable custom css */
+
+    .footable-row-detail {
+        text-align: left;
+    }
+    .footable-first-column {
+    }
+    .footable-first-column > div,
+    .footable-first-column .item-count {
+        font-size: 12px !important;
+        vertical-align: middle;
+    }
+     div.footable-row-detail-row {
+        display: table-row;
+    }
+    div.footable-row-detail-name {
+        padding: 5px 15px 10px 0;
+        display: table-cell;
+    }
+    div.footable-row-detail-value {
+        display: table-cell;
+    }
+    .footable-row-detail-cell {
+        text-align: left !important;
+    }
+    table.footable.breakpoint > tbody > tr > td > span.footable-toggle {
+        min-width: 16px;
+        height: 16px;
+        padding-right: 0;
+        overflow: hidden;
+        display: block;
+    }
+
+/* toggle style change */
+
+    .footable-toggle {
+        background: url(../img/table-plus.png) no-repeat center;
+        vertical-align: middle;
+    }
+        .footable-detail-show .footable-toggle {
+            background: url(../img/table-minus.png) no-repeat center;
+        }
+    .footable-toggle:before {
+        display: none !important;
+    }
+
+
+
+/* hidding item counter in different tables */
+
+    .downloadable-products-page .data-table .item-count {
+        display: none;
+    }
+
+@media all and (max-width: 980px) {
+
+    .compare-products-table-mobile .item-count,
+    .order-summary-content .cart .item-count,
+    .order-details-page .data-table .item-count,
+    .wishlist-page .cart .item-count,
+    .section.shipments .data-table .item-count {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 735px) {
+
+    .return-request-page .data-table .item-count {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 686px) {
+
+    .section.products .data-table .item-count {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 598px) {
+
+    .reward-points-history .data-table .item-count {
+	    display: none;
+    }
+
+}
