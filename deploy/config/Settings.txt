@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString:Data Source=simple-sql-eu-1.cloudapp.net;Initial Catalog=LevDesireNop;Integrated Security=False;User Id=cargoshare-nop;Password=CN123456!

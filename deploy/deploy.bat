@@ -1,0 +1,1 @@
+PublishNopCommerce.v2.bat C:\data\wc\dev\Products\CargoShare\trunk\ Release
